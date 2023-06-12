@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="gisela soledad avalos">
+    <meta name="description" content="esta es mi primera página web">
+    <meta name="keywords" content="mi proyecto final, desarrollo web, gisela soledad avalos">
+    <title>Mi proyecto final-Gisela Soledad Avalos</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    </head>
+    <body>
+    <header>
+        <div class="holder">
+        <img class= "logo-img" src="/img/gatitologo.png" width=100 alt="gatito-img">
+        <h1 class="logo"> Irina Style</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="activo">
+        <ul>
+        <li><a class="activo" href="/index.html" target="_blank">Inicio</a></li>
+        <li><a class="activo" href="/pages/seccion.html" target="_blank">Nosotros</a></li>
+        <li><a class="activo" href="/pages/servicios.html" target="_blank">Productos </a></li>
+        <li><a class="activo" href="/pages/contacto.html" target="_blank">Contacto</a></li>
+        <li><a class="activo" href="/pages/galeria.html" target="_blank">Galeria</a></li>
+        </ul>
+
+        </div>
+        
+    </nav>
+
+    <h1><span>Formulario Irina Style </span></h1>
+    
+    <form id="formulario" action="envio" method="post" target="_blank">
+        <label for="usuario">  Usuario:  </label>
+        
+        <input type="text" id="identificador" name="nombre" placeholder="Ingrese aquí su usuario" required>
+        <small>Es obligatorio este campo!</small>
+        <br><br>
+        
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Ingrese aquí su contraseña">
+        <br><br>
+        
+        <input type="checkbox" name="condiciones" id="condiciones">
+        <label for="condiciones">Acepta recibir notificaciones y demás información que este establecimiento puede ofrecerle?</label>
+        <br><br>
+        
+        <p>Elija la actividad por la cual quiera recibir nuestros servicios:</p>
+        <input type="radio" name="actividad" value="vestidos">Alquiler de vestidos de fiesta
+        <input type="radio" name="actividad" value="trajes">Alquiler de trajes y esmóquines
+        <input type="radio" name="actividad" value="asesoramiento">Asesoramiento de imagen y estilismo
+        <br><br>
+        
+        <label for="dias_faltantes">Cantidad de días que faltan para el evento:</label>
+        <input type="number" id="dias_faltantes" name="dias_faltantes" placeholder="dias faltantes para el evento" min="1" max="365" required>
+        <br><br>
+        
+        <label for="archivo">Sube tu idea en un archivo:</label>
+        <input type="file" id="archivo" name="archivo">
+        <br><br>
+        
+        <label for="opinion">Escribe lo que deseas:</label>
+        <textarea id="opinion" name="opinion" placeholder="Escribe tus metas" rows="10" cols="40"></textarea>
+        <br><br>
+        
+        <label for="body">Selecciona la parte del cuerpo a resaltar:</label>
+        <select name="body" id="body">
+            <optgroup label="Grupo 1">
+                <option value="Piernas">Piernas</option>
+                <option value="Brazos">Brazos</option>
+                <option value="Escote">Escote</option>
+            </optgroup>
+            <optgroup label="Grupo 2">
+                <option value="Hombros">Hombros</option>
+                <option value="Espalda">Espalda</option>
+                <option value="Cintura">Cintura</option>
+            </optgroup>
+        </select>
+        <br><br>
+        
+        <label for="fecha">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" max="2023-06-30">
+        <br><br>
+        
+        <input type="submit" value="Enviar tu formulario">
+        <br>
+        <input type="reset" value="Resetear formulario" />
+    </form>
+    
+
+<div>
+    <h2>Contactanos</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26271.943848553157!2d-58.416816495872254!3d-34.604338995389384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1682368849828!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
+<a href="mail to:avalosgisela@gmail.com">Este es mi mail de contacto</a>
+<br>
+<a href="Telefono de contacto"> Telefono de Contacto </a>
+<br>
+</div>
+
+
+
+<script src="/scripts/js.js"></script>
+
+    <footer>
+    <div class="container">
+
+    <ul class="media-iconos">
+        <div class="media-iconos">
+        <li> <a href="https://es-la.facebook.com/" target="_blank"> <i class="bi bi-facebook"></i></a></li>
+        <li>  <a href="https://www.instagram.com/" target="_blank"> <i class="bi bi-instagram"></i></a>
+        <li> <a href="https://twitter.com/?lang=ES" target="_blank"> <i class="bi bi-twitter"></i></a>
+        </ul> 
+        </div>
+        </footer>
+
+
+
+    
+    </body>
+    </html>
